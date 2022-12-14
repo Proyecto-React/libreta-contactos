@@ -52,10 +52,8 @@ const confirmDelete=(id)=>{
 
 }
 //6 use useEffect
-
 useEffect(()=>{
     getContactos()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
 //7 devolvemos la vista de nuestro componente
 return(
