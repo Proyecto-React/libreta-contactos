@@ -39,6 +39,7 @@ setTelefono(contacto.data().telefono)
     }
 useEffect(()=>{
     getcontactoById(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
 
 return (
