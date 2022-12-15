@@ -5,6 +5,7 @@ import {collection, addDoc} from 'firebase/firestore'
 import {db} from '../firebaseConfig/firebase'
 import Swal from "sweetalert2"
 import withReactContent from "sweetalert2-react-content"
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line  no-unused-vars
 const MySwal = withReactContent(Swal)
@@ -50,7 +51,8 @@ return(
                     value={nombre}
                 onChange={(e)=>setNombre(e.target.value)}
                     type="text"
-                    className='form-control'/>
+                    className='form-control'
+                    required/>
                 </div>
 
                 <div className="mb-3">
@@ -59,7 +61,8 @@ return(
                     value={apellido}
                 onChange={(e)=>setApellido(e.target.value)}
                     type="text"
-                    className='form-control'/>
+                    className='form-control'
+                    required/>
                 </div>
 
                 <div className="mb-3">
@@ -67,8 +70,9 @@ return(
                     <input 
                     value={email}
                 onChange={(e)=>setEmail(e.target.value)}
-                    type="text"
-                    className='form-control'/>
+                    type="email"
+                    className='form-control'
+                    required/>
                 </div>
 
                 <div className="mb-3">
@@ -76,11 +80,16 @@ return(
                     <input 
                     value={telefono}
                 onChange={(e)=>setTelefono(e.target.value)}
-                    type="text"
-                    className='form-control'/>
+                    type="tel"
+                    className='form-control'
+                    required/>
                 </div>
-
-                <button onClick={()=>{confirmCreate()}} type="submit" className='btn btn-primary'>Agregar</button>
+                <button onClick={()=>{confirmCreate()}} type="submit" className='btn btn-primary'>
+                    Agregar
+                </button>
+                <Link to="/show" type="submit" className='btn btn-primary m-2'>
+                    Cancelar
+                </Link>
         </form>
     </div>
 </div>

@@ -1,5 +1,6 @@
 import "../styles/Inicio.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Inicio=()=>{
 
@@ -8,7 +9,7 @@ const Inicio=()=>{
             <div className="inicio">
                 {/* eslint-disable-next-line  */}
                 <h1>Libreta de Contacto</h1>
-                <div className="logo"></div>
+                <Link to="/show" className="logo"></Link>
             </div>
 
     )
