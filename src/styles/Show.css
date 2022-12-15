@@ -10,13 +10,15 @@
     transition: all .2s;
     align-items: center;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .btn-nuevo:hover{
     box-shadow: 4px 4px 4px black;
+    color: black;
 }
 
-.btn-nuevo:facus{
+.btn-nuevo:focus{
     background-color:white;
     border: 2px solid black;
     color: black;
@@ -37,31 +39,35 @@
     align-items: center;
     position: relative;
     max-width: 190px;
+    
    }
    
-   .buscar {
+   #myInput {
     width: 100%;
     height: 40px;
     line-height: 28px;
-    padding: 0 1rem;
+    padding: 10px;
     padding-left: 2.5rem;
     border: 2px solid transparent;
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #0d0c22;
+    color:#F5FAC7;
     transition: .3s ease;
+    margin-bottom: 0.5rem;
    }
    
-   #yInput::placeholder {
+   #myInput::placeholder {
     color: #9e9ea7;
    }
    
-   #yInput:focus, #yInput:hover {
+   #myInput:focus, #myInput:hover {
     outline: none;
-    border-color: rgba(234,76,137,0.4);
+    border-color: #00FFAB;
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    box-shadow: 6px 2px 6px #00ffaa6c;
+    box-sizing: border-box;
+    color: black;
    }
    
    .icon {

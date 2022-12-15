@@ -3,6 +3,11 @@ import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {collection, addDoc} from 'firebase/firestore'
 import {db} from '../firebaseConfig/firebase'
+import Swal from "sweetalert2"
+import withReactContent from "sweetalert2-react-content"
+
+// eslint-disable-next-line  no-unused-vars
+const MySwal = withReactContent(Swal)
 
 const Create = ()=>{
 
@@ -24,6 +29,14 @@ const Create = ()=>{
             telefono:telefono
         })
         navigate("/")
+    }
+    const confirmCreate = ()=>{
+        Swal.fire({            
+            icon: 'success',
+            title: 'Contacto guardado',                        
+            showConfirmButton: true,
+            timer: 1500
+        })
     }
 return(
 <div className="container">
@@ -67,7 +80,7 @@ return(
                     className='form-control'/>
                 </div>
 
-                <button type="submit" className='btn btn-primary'>Agregar</button>
+                <button onClick={()=>{confirmCreate()}} type="submit" className='btn btn-primary'>Agregar</button>
         </form>
     </div>
 </div>

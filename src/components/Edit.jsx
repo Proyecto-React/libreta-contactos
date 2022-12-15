@@ -2,10 +2,15 @@ import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { getDoc, updateDoc, doc } from "firebase/firestore"
 import { db } from "../firebaseConfig/firebase"
+import Swal from "sweetalert2"
+import withReactContent from "sweetalert2-react-content"
+
+// eslint-disable-next-line  no-unused-vars
+const MySwal = withReactContent(Swal)
 
 const Edit = ()=>{
     const [ nombre, setNombre ] = useState('')
-    const [ apellido, setApellido ] = useState(0)
+    const [ apellido, setApellido ] = useState('')
     const [ email, setEmail ] = useState('')
     const [ telefono, setTelefono ] = useState('')
 
@@ -42,11 +47,20 @@ useEffect(()=>{
     // eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
 
+const confirmEdit = ()=>{
+    Swal.fire({            
+        icon: 'success',
+        title: 'Contacto guardado',                        
+        showConfirmButton: true,
+        timer: 1500
+      })
+}
+
 return (
     <div className='container'>
         <div className='row'>
             <div className='col'>
-                <h1>Edit contacto</h1>
+                <h1>Editar contacto</h1>
                  <form onSubmit={update}>
                     <div className='mb-3'>
                         <label className='form-label'>Nombre</label>
@@ -88,7 +102,7 @@ return (
                         />                 
                     </div>    
 
-                    <button type='submit' className='btn btn-primary'>Update</button>
+                    <button onClick={()=>{confirmEdit()}} type='submit' className='btn btn-primary' formTarget="_parent" >Guardar</button>
                  </form>   
             </div>
         </div>

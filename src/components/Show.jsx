@@ -78,7 +78,7 @@ const Show = () => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <div className="d-grid gap-2">
+            <div className="grid g-col-4">
             
               <Link to="/create" className="btn-nuevo mt-2 mb-2">
 
@@ -90,7 +90,7 @@ const Show = () => {
               </Link>
               <div className="group">
             
-            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
                 <input 
                   // className="buscar"
                   type="text"
@@ -100,10 +100,10 @@ const Show = () => {
                   title="Type in a name"
                 />
               
-            </div>
+              </div>
             </div>
             
-            <table className="table table-dark table-hover" id="myTable">
+            <table className="table table-info table-striped table-hover" id="myTable">
               <thead>
                 <tr>
                   <th>Nombre</th>
@@ -123,7 +123,7 @@ const Show = () => {
                     <td>
                       <Link
                         to={`/edit/${contacto.id}`}
-                        className="btn btn-light"
+                        className="btn btn-warning ml-4"
                       >
                         <i className="fa-solid fa-pencil"></i>
                       </Link>
@@ -131,7 +131,7 @@ const Show = () => {
                         onClick={() => {
                           confirmDelete(contacto.id);
                         }}
-                        className="btn btn-danger"
+                        className="btn btn-danger "
                       >
                         <i className="fa-solid fa-trash"></i>
                       </button>

@@ -30,15 +30,15 @@ li:hover {
     color: #000;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/* ::placeholder { 
     color: ghostwhite;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
   }
   
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  :-ms-input-placeholder {
     color: ghostwhite;
   }
   
-  ::-ms-input-placeholder { /* Microsoft Edge */
+  ::-ms-input-placeholder { 
     color: ghostwhite;
-  }
+  } */
