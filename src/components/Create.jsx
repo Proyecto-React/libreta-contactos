@@ -28,7 +28,7 @@ const Create = ()=>{
             email:email,
             telefono:telefono
         })
-        navigate("/")
+        navigate("/show")
     }
     const confirmCreate = ()=>{
         Swal.fire({            

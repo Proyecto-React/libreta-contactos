@@ -28,7 +28,7 @@ const Edit = ()=>{
             telefono:telefono
         }
         await updateDoc (contacto,data)
-        navigate("/")
+        navigate("/show")
     }
 
     const getcontactoById= async (id)=>{
@@ -102,7 +102,7 @@ return (
                         />                 
                     </div>    
 
-                    <button onClick={()=>{confirmEdit()}} type='submit' className='btn btn-primary' formTarget="_parent" >Guardar</button>
+                    <button onClick={()=>{confirmEdit()}} type='submit' className='btn btn-primary' >Guardar</button>
                  </form>   
             </div>
         </div>
