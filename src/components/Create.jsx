@@ -59,7 +59,7 @@ return(
                 </div>
 
                 <div className="mb-3">
-                    <label className='form-label'>Telefono</label>
+                    <label className='form-label'>Teléfono</label>
                     <input 
                     value={telefono}
                 onChange={(e)=>setTelefono(e.target.value)}
