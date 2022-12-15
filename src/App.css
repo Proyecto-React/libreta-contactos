@@ -38,32 +38,5 @@
 
 
 
-.menu{
-text-align: left;
-background-color: #14C38E;
-opacity: 0.7;
-}
 
-.menu li{
-  display:inline-block;
-  text-decoration:none;
-  padding:5px 10px;
-}
 
-.menu li a{
-  color: #000 !important;
-}
-
-li:hover{
-  background-color:#fff;
-  color:#000;
-  }
-
-  .footer{
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:80px;
-    width:100%;
-    background:#CC99F9;
-  }

@@ -1,3 +1,4 @@
+import "../styles/Create.css";
 import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {collection, addDoc} from 'firebase/firestore'
@@ -28,7 +29,7 @@ return(
 <div className="container">
 <div className="row">
     <div className="col">
-        <h1>Create contacto</h1>
+        <h1>Crear contacto nuevo</h1>
         <form onSubmit={store}>
             <div className="mb-3">
                     <label className='form-label'>Nombre</label>
@@ -66,7 +67,7 @@ return(
                     className='form-control'/>
                 </div>
 
-                <button type="submit" className='btn btn-primary'>CREATE</button>
+                <button type="submit" className='btn btn-primary'>Agregar</button>
         </form>
     </div>
 </div>
