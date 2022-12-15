@@ -1,3 +1,4 @@
+import "../styles/Inicio.css";
 import React from "react";
 
 const Inicio=()=>{
@@ -6,7 +7,7 @@ const Inicio=()=>{
 
             <div className="inicio">
                 <h1>Libreta de Contacto</h1>
-                <img src="../imagenes/grupo2.jpeg"></img>
+                <div className="logo"></div>
             </div>
 
     )

@@ -1,3 +1,4 @@
+import "../styles/Footer.css";
 import React from "react";
 
 const Footer=()=>{
@@ -5,9 +6,9 @@ const Footer=()=>{
     return (
 
             <div className="footer">
-                <h3>Grupo 2</h3>
-                <small class="text-muted">Copyright 2022 - Curso React JS
-           </small>
+                <h5>Grupo 2</h5>
+                <small class="text-muted">© Copyright 2022 - Curso React JS
+            </small>
             </div>
 
     )

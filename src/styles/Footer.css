@@ -1,0 +1,15 @@
+
+.footer {
+    font-family: 'Lora', serif;
+    left: 0px;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    background: #cc99f9d6;
+    padding: 10px;
+    position: fixed;
+}
+
+.text-muted {
+    font-family: 'Bebas Neue', cursive;
+}
