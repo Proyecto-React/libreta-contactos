@@ -75,7 +75,7 @@ return(
         <th>Apellido</th>
         <th>Email</th>
         <th>Teléfono</th>
-        <th></th>        
+        <th>Acciones</th>        
     </tr>
 </thead>
 <tbody>
