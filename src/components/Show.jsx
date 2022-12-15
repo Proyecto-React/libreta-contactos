@@ -11,9 +11,6 @@ const MySwal = withReactContent(Swal);
 const searchName = () => {
     var input, filter, table, tr, td, i;
     input = document.getElementById("myInput");
-
-    console.log('Buscando: ' + input)
-
     filter = input.value.toUpperCase();
     table = document.getElementById("myTable");
     tr = table.getElementsByTagName("tr");
